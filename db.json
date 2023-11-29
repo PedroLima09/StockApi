@@ -1,0 +1,9 @@
+{
+    "product": {
+        "1": {
+            "name": "String",
+            "price": 1.0
+        }
+    },
+    "stock": {}
+}

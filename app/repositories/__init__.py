@@ -1,0 +1,2 @@
+from .product_repository import ProductRepository
+from .stock_repository import StockRepository
