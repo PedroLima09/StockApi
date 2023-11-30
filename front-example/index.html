@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+    <h1>Base</h1>
+    <dialog class="menu" id="menuAdicionar">
+        <form id="formularioAdicionar">
+            <h1>Adicionar Produto</h1>
+            <input type="text" name="nome" id="nome">
+            <input type="text" name="preco" id="preco">
+            <button type="button" id="adicionar">Adicionar</button>
+        </form>
+    </dialog>
+    <button id="abrirMenuAdicionar">Adicionar Produto</button>
+    <div id="pesquisa">
+        <input type="text">
+        <button type="submit">Pesquisar</button>
+    </div>
+   </header> 
+
+   <main>
+    <dialog class="menu" id="menuAtualizar">
+        <form id="formularioAtualizacao">
+            <h1>Atualizar Produto</h1>
+            <input type="text" name="nome" id="nome" required oninvalid="this.setCustomValidity('Digite um nome valido!.')" oninput="this.setCustomValidity('')">
+            <input type="text" name="preco" id="preco" required oninvalid="this.setCustomValidity('Digite um preço valido!.')" oninput="this.setCustomValidity('')">
+            <button type="submit">Atualizar</button>
+        </form>
+    </dialog>
+        <ul id="produtos">
+        </ul>
+   </main>
+   <script src="script.js"></script>
+</body>
+</html>

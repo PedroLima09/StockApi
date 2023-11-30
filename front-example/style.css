@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    box-sizing: 0;
+    list-style-type: none;
+}
+
+header {
+    display: flex;
+    background-color: gray;
+    height: 10rem;
+    box-shadow: 0.2rem 0.2rem 0.5rem 0.5rem black;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+
+header button {
+    border-radius: 0.45rem;
+    height: 2rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem black;
+}
+
+header button:hover {
+    background-color: rgb(149, 148, 148);
+}
+
+main ul {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+main ul li {
+    padding: 0.5rem;
+    border-color: black;
+    border-radius: 0.5rem;
+    border-style:solid;
+    width: 12rem;
+    height: 7rem;
+    
+}
+
+li button {
+    border-radius: 0.45rem;
+}
+
+.produto { 
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.produto p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.menu {
+    height: 10rem;
+    width: 20rem;
+    border-radius: 0.5rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.5)
+}
+
+.menu form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
